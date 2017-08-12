@@ -105,18 +105,22 @@ export const container = style({
     },
     '&.about > .background' : {
       backgroundImage : 'url(/images/sections/about.jpg)',
+      backgroundColor : 'black',
       filter          : `brightness(50%) contrast(130%) grayscale(80%)`,
     },
     '&.skills > .background' : {
       backgroundImage : 'url(/images/sections/skills.jpg)',
+      backgroundColor : 'black',
       filter          : `brightness(50%) contrast(110%) grayscale(20%)`,
     },
     '&.experience > .background' : {
       backgroundImage : 'url(/images/sections/experience.jpg)',
+      backgroundColor : 'black',
       filter          : `brightness(60%) contrast(100%) grayscale(0%)`,
     },
     '&.contacts > .background' : {
       backgroundImage : 'url(/images/sections/contacts.jpg)',
+      backgroundColor : 'black',
       filter          : `brightness(60%) contrast(100%) grayscale(0%)`,
     },
   }
