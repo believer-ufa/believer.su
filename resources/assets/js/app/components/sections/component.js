@@ -43,8 +43,8 @@ const Sections = ({ sections }) => {
     }
   })
 
-  if (sectionsPool.length > 3) {
-    sectionsPool[sectionsPool.length-4].visible = false
+  if (sectionsPool.length > 6) {
+    sectionsPool[sectionsPool.length-7].visible = false
   }
 
   if (sectionsPool.length > 1) {

@@ -15,7 +15,7 @@ const skillsText = [
   h1('Фронтенд'),
   p([`
     Я понимаю современные стандарты, использую `, a({href:'https://jspm.io/', target:'blank'}, 'JSPM'),`, `, a({href:'http://riotjs.com/', target:'blank'}, 'Riot.js'),` и React, конечно же. А данный сайт написан на основе `, a({href:'https://infernojs.org/', target:'blank'}, 'Inferno.js'),` и `, a({href:'https://github.com/joshburgess/inferno-most-fp-demo', target:'blank'}, 'бойлерплейта'),`, работающего на основе функциональщины, редакса, hyperscript'а и typestyle'а.
-    Кстати, если вам интересно посмотреть на его исходники - то `, a({href:'https://github.com/believer-ufa/believer.su', target:'blank'}, 'вот они'),`.
+    Кстати, если вам интересно посмотреть на его исходники - то `, a({href:'https://github.com/believer-ufa/believer.su/tree/master/resources/assets/js', target:'blank'}, 'вот они'),`.
   `]),
   h1('Документация'),
   p([`
