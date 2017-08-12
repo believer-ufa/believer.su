@@ -1,0 +1,41 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/imperavi-kube/src/kube";
+
+@import "node_modules/perfect-scrollbar/src/css/main";
+
+html {
+  background-color: black;
+}
+
+#app {
+  z-index: 1;
+  padding: 10px;
+}
+
+#background {
+  z-index: -1;
+
+  position: fixed;
+  opacity: 1;
+
+  width : 100%;
+  height : 100%;
+  background-color: black;
+}
+
+// @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Gabriela|Lobster|Marck+Script|Yanone+Kaffeesatz:300,400');
+//@import url('https://fonts.googleapis.com/css?family=Bad+Script|EB+Garamond|Gabriela|Lobster|Tinos|Yanone+Kaffeesatz:300,400&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:300,400&subset=cyrillic');
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  /*border-bottom: 1px dashed white;*/
+  &:hover {
+    color: white;
+  }
+}
