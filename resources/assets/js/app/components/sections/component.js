@@ -8,6 +8,7 @@ import aboutText      from './data/about'
 import skillsText     from './data/skills'
 import experienceText from './data/experience'
 import contantsText   from './data/contants'
+import animationGen   from './styles/animations.js'
 
 import styles from './styles'
 
@@ -35,10 +36,11 @@ const Sections = ({ sections }) => {
       sectionsCodes.push(section.code)
 
       sectionsPool.push({
-        zIndex   : zIndexCounter,
-        code     : section.code,
-        inactive : false,
-        visible  : true,
+        zIndex    : zIndexCounter,
+        code      : section.code,
+        inactive  : false,
+        visible   : true,
+        animClass : animationGen()
       })
     }
   })
@@ -55,7 +57,7 @@ const Sections = ({ sections }) => {
 
     const inactiveClass = sec.inactive ? `.inactive` : ''
 
-    const el = div(`#section-${sec.zIndex}.${styles.container}${inactiveClass}.${sec.code}`, {
+    const el = div(`#section-${sec.zIndex}.${styles.container}${inactiveClass}.${sec.code}.${sec.animClass}}`, {
       style : `z-index: ${sec.zIndex}; ${sec.visible ? '' : 'display:none;'}`
     }, [
       div(`.subcontainer.ps.ps--theme_default.ps--active-y`, sectionsContent[sec.code]),

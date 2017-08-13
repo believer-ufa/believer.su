@@ -29,7 +29,7 @@ export const container = style({
   borderBottom  : '1px solid rgba(134, 171, 223, 0.20)',
   ... textShadows,
 
-  animationDuration        : `2s`,
+  animationDuration        : `3s`,
   animationIterationCount  : `1`,
   animationTimingFunction  : `ease`,
   animationFillMode        : `forwards`,
@@ -70,38 +70,6 @@ export const container = style({
       top           : 0,
       left          : 0,
       zIndex        : -1,
-    },
-    '&.about' : {
-      clipPath      : `circle(0% at 0 0)`,
-      animationName: keyframes({
-        '100%' : {
-          clipPath : `circle(150% at 0 0)`,
-        }
-      }),
-    },
-    '&.skills' : {
-      clipPath      : `circle(0% at 5% 80%)`,
-      animationName: keyframes({
-        '100%' : {
-          clipPath : `circle(150% at 5% 80%)`,
-        }
-      }),
-    },
-    '&.experience' : {
-      clipPath      : `circle(0% at 100% 0)`,
-      animationName: keyframes({
-        '100%' : {
-          clipPath : `circle(150% at 100% 0)`,
-        }
-      }),
-    },
-    '&.contacts' : {
-      clipPath      : `circle(0% at 100% 100%)`,
-      animationName: keyframes({
-        '100%' : {
-          clipPath : `circle(150% at 100% 100%)`,
-        }
-      }),
     },
     '&.about > .background' : {
       backgroundImage : 'url(/images/sections/about.jpg)',
