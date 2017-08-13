@@ -49,8 +49,8 @@ const Sections = ({ sections }) => {
     sectionsPool[sectionsPool.length-7].visible = false
   }
 
-  if (sectionsPool.length > 1) {
-    sectionsPool[sectionsPool.length-2].inactive = true
+  if (sectionsPool.length > 2) {
+    sectionsPool[sectionsPool.length-3].inactive = true
   }
 
   return sectionsPool.map(sec => {

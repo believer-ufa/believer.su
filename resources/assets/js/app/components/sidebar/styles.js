@@ -1,4 +1,5 @@
 import { cssRule, style, keyframes, media } from 'typestyle'
+import { textShadows } from '../../styles/fonts'
 
 const sectionElementsArr = Array.apply(null, {length: 20}).map(Number.call, Number)
 const sectionsElementsRules = {}
@@ -19,7 +20,7 @@ export const container = style({
   //flexDirection : 'column',
   flexDirection  : 'row',
   justifyContent : `center`,
-
+  ... textShadows,
 
   zIndex    : 100000,
   $nest     : {

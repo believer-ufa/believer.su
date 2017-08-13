@@ -22,7 +22,10 @@ export const container = style({
   left          : 0,
 
   display        : `flex`,
-  justifyContent : `center`,
+  //justifyContent : `center`,
+  //alignItems     : `baseline`,
+  flexDirection  : `column`,
+  alignItems     : `center`,
 
   borderTop     : '1px solid rgba(134, 171, 223, 0.20)',
   borderRight   : '1px solid rgba(134, 171, 223, 0.20)',
@@ -38,8 +41,8 @@ export const container = style({
   transition : 'opacity 1s linear',
 
   $nest : {
-    '&.inactive' : {
-      //opacity : 0,
+    '&.inactive > .background' : {
+      animationName: 'unset',
     },
     '& > .subcontainer' : {
       // marginLeft : `210px`,
@@ -48,9 +51,9 @@ export const container = style({
       maxWidth        : '1000px',
       overflow        : 'auto',
       position        : `relative`,
-      paddingBottom   : '100px',
-      // backgroundColor : 'rgba(0,0,0,.3)',
-      // padding         : '15px',
+      backgroundColor : 'rgba(0,0,0,.5)',
+      padding         : '15px',
+      borderRadius    : '10px',
       // border          : '1px solid rgba(134, 171, 223, 0.20)',
       $nest : {
         '& > h1' : {
@@ -70,26 +73,23 @@ export const container = style({
       top           : 0,
       left          : 0,
       zIndex        : -1,
-    },
-    '&.about > .background' : {
-      backgroundImage : 'url(/images/sections/about.jpg)',
-      backgroundColor : 'black',
-      filter          : `brightness(50%) contrast(130%) grayscale(80%)`,
-    },
-    '&.skills > .background' : {
-      backgroundImage : 'url(/images/sections/skills.jpg)',
-      backgroundColor : 'black',
-      filter          : `brightness(50%) contrast(110%) grayscale(20%)`,
-    },
-    '&.experience > .background' : {
-      backgroundImage : 'url(/images/sections/experience.jpg)',
-      backgroundColor : 'black',
-      filter          : `brightness(60%) contrast(100%) grayscale(0%)`,
-    },
-    '&.contacts > .background' : {
-      backgroundImage : 'url(/images/sections/contacts.jpg)',
-      backgroundColor : 'black',
-      filter          : `brightness(60%) contrast(100%) grayscale(0%)`,
+
+      /* Думал добавить ещё анимацию движения фона, но она чёто иногда глючит
+
+      transform : `scale(1)`,
+
+      animationDuration        : `60s`,
+      animationTimingFunction  : `ease`,
+      animationName: keyframes({
+        '50%' : {
+          transform : `scale(1.1)`,
+        },
+        '100%' : {
+          transform : `scale(1)`,
+        },
+      }),
+      */
+
     },
   }
 }, media({

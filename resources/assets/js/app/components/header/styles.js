@@ -25,6 +25,7 @@ function makeWordsDelay(wordsCount, startDelay) {
 
 export const title1Class = style({
   color : 'white',
+  ... textShadows,
 
   $nest: {
     '& > *': {
@@ -48,6 +49,7 @@ export const title1Class = style({
 export const title2Class = style({
   color      : 'white',
   marginLeft : '5px',
+  ... textShadows,
 
   $nest: {
     '& > *': {

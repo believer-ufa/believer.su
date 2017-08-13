@@ -1,4 +1,10 @@
 import 'babel-polyfill'
+import preloadImg  from './app/functions/preloadImg'
+import backgrounds from './app/components/sections/styles/backgrounds'
+
+setTimeout(1000, function() {
+  backgrounds.forEach(preloadImg)
+})
 
 // Overwrite Promise implementation with Creed for better performance
 import { shim } from 'creed'
